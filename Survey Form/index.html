@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Programming Journey Survey</h1>
+            <p id="description" class="description-text-center">
+                Your response will be of great value in our study. 
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="e.g. John Doe"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email Address</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="example@site.com"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label id="age-label" for="age">Age<span class="clue">(optional)</span></label>
+                <input
+                    type="number"
+                    name="age"
+                    id="age"
+                    min="9"
+                    max="120"
+                    class="form-control"
+                    placeholder="Age"
+                />
+            </div>
+            <div class="form-group">
+                <p>How would you describe your current role/position?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role/position</option>
+                    <option value="full-student">Fulltime Student</option>
+                    <option value="part-student">Working Student</option>
+                    <option value="learner">Fulltime Learner</option>
+                    <option value="professional">Professional</option>
+                    <option value="hobbyist">Hobbyist</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Are you willing to allot time in learning how to code?</p>
+                <label>
+                    <input
+                        name="user-recommend"
+                        value="definitely"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    />Definitely
+                </label>
+                <label>
+                    <input
+                        name="user-recommend"
+                        value="maybe"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    />Maybe
+                </label>
+                <label>
+                    <input
+                        name="user-recommend"
+                        value="not-so-sure"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    />Not so sure...
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What fields of programming are you most interested in?
+                </p>
+                <select id="most-interested" name="mostInterested" class="form-control" required>
+                    <option disabled selected value>Select an option from the ff:</option>
+                        <option value="front-end">Front-End</option>
+                        <option value="back-end">Back-End</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="machine-learn">Machine learning</option>
+                        <option value="iot">Internet of Things</option>
+                        <option value="software-eng">Software Engineering</option>
+                        <option value="game-dev">Game Development</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What days are you most free?
+                    <span class="clue">(Check all that apply</span>
+                </p>
+
+                <label>
+                    <input
+                        name="day"
+                        value="monday"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Monday
+                </label>
+                <label>
+                    <input
+                        name="day"
+                        value="tuesday"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Tuesday
+                </label>
+                <label>
+                    <input
+                        name="day"
+                        value="wednesday"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Wednesday
+                </label>
+                <label>
+                    <input
+                        name="day"
+                        value="thursday"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Thursday
+                </label>
+                <label>
+                    <input
+                        name="day"
+                        value="friday"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Friday
+                </label>
+                <label>
+                    <input
+                        name="day"
+                        value="saturday"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Saturday
+                </label>
+                <label>
+                    <input
+                        name="day"
+                        value="sunday"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Sunday
+                </label>
+                <label>
+                    <input
+                        name="day"
+                        value="everday"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Everyday
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>What plans do you have in mind in pursuing this journey? Let us know!</p>
+                <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Share your plans here!"
+                >
+                </textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
